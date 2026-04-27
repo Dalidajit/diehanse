@@ -1,0 +1,105 @@
+/* Style de la bannière */
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh; /* Elle prend 60% de la hauteur de l'écran */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffedce; /* Ta couleur Crème pour le texte */
+	margin-bottom: 20 px;
+
+}
+
+/* Le contenu à l'intérieur */
+.banner-content h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'serif'; /* Utilise une police élégante */
+    background-color: ;
+}
+
+.banner-content p {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* La petite ligne décorative */
+.line {
+    width: 100px;
+    height: 3px;
+    background-color: #794323; /* Ta couleur Brun */
+    margin: 20px auto;
+}
+
+/* Adaptation Mobile */
+@media (max-width: 768px) {
+    .banner {
+        height: 40vh; /* Plus petite sur téléphone pour voir le texte en dessous vite */
+		margin-bottom: 20px;
+    }
+    .banner-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+<!--image/texte-->
+
+section{
+    display: flex*;
+}
+/* Le conteneur principal */
+.bloc {
+    display: flex; /* Active le mode flexible */
+    flex-direction: row; /* Met l'image et le texte sur la même ligne (ordi) */
+    align-items: center; /* Aligne verticalement le texte avec le milieu de l'image */
+    gap: 40px; /* Crée un espace vide de 40px entre l'image et le texte */
+    padding: 50px 10%; /* 50px de marge en haut/bas, 10% sur les côtés pour respirer */
+    background-color: #ffedce; /* Ta couleur Crème du moodboard */
+     flex: 1; /* Dit à l'image de prendre exactement 50% de la largeur */
+}
+
+/* Le sous-bloc Image */
+.bloc-image {
+    flex: 1; /* Dit à l'image de prendre exactement 50% de la largeur */
+}
+
+.bloc-image img {
+    width: 100%; /* L'image remplit toute sa div */
+    height: auto; /* Garde le ratio (évite l'effet écrasé) */
+    border-radius: 15px; /* Arrondit les coins pour un look plus moderne */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Ajoute une ombre légère pour donner du relief */
+	margin-top: 5px;
+}
+
+/* Le sous-bloc Texte */
+.bloc-texte {
+    flex: 1; /* Dit au texte de prendre aussi 50% de la largeur */
+}
+
+.bloc-texte h2 {
+    color: #794323; /* Ta couleur Brun pour le titre */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.bloc-texte p {
+    color: #333; /* Un gris foncé pour que ce soit facile à lire */
+    line-height: 1.6; /* Augmente l'espace entre les lignes de texte */
+}
+
+#hanse {
+	margin-top: 25px;
+}
+/* --- LE MODE MOBILE --- */
+@media (max-width: 768px) {
+    .bloc {
+        display: block;
+        padding: 30px 5%; /* On réduit les marges pour gagner de la place */
+    }
+}
